@@ -1,10 +1,8 @@
 {
   "images" : [
     {
-      "orientation" : "landscape",
       "idiom" : "tv",
-      "extent" : "full-screen",
-      "minimum-system-version" : "9.0",
+      "filename" : "f4e16a0c-38a6-4ded-8d58-93c71edf4703.png",
       "scale" : "1x"
     }
   ],

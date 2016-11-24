@@ -12,15 +12,15 @@ import Alamofire
 
 extension VideosViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     // MARK: UICollectionViewDataSource Methods
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return self.videos.count
     }
 
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell: VideosCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(VideosCollectionViewCell.identifier, forIndexPath: indexPath) as! VideosCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: VideosCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: VideosCollectionViewCell.identifier, for: indexPath) as! VideosCollectionViewCell
         
-        let youtubeSearchResult = self.videos[indexPath.row]
+        let youtubeSearchResult = self.videos[(indexPath as NSIndexPath).row]
         let video = youtubeSearchResult.video
         cell.setup(video)
 
@@ -28,12 +28,12 @@ extension VideosViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     // MARK: UICollectionViewDelegate Methods
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let youtubeSearchResult = self.videos[indexPath.row]
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let youtubeSearchResult = self.videos[(indexPath as NSIndexPath).row]
         let playerVC = VideoPlayer()
         playerVC.video = youtubeSearchResult.video
         playerVC.playVideo()
-        [self.presentViewController(playerVC, animated: true, completion: nil)]
+        [self.present(playerVC, animated: true, completion: nil)]
     }
     
     //Created by Nazim Amin
@@ -42,21 +42,21 @@ extension VideosViewController: UICollectionViewDelegate, UICollectionViewDataSo
     let height: CGFloat = width / 16 * 9;
     return CGSizeMake(width, height)
     }*/
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
-        let defaultSize = CGSizeMake(400, 234)
-        let focusSize = CGSizeMake(400 + (400 * 0.01), 234 + (234 * 0.01))
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        let defaultSize = CGSize(width: 400, height: 234)
+        let focusSize = CGSize(width: 400 + (400 * 0.01), height: 234 + (234 * 0.01))
         if let prev = context.previouslyFocusedView as? VideosCollectionViewCell {
-            UIView.animateWithDuration(0.2, animations: {
+            UIView.animate(withDuration: 0.2, animations: {
                     () -> Void in
                         prev.videoImageView.frame.size = defaultSize
-                        prev.videoDescriptionLabel.textColor = UIColor.blackColor()
+                        prev.videoDescriptionLabel.textColor = UIColor.black
                 })
         }
         if let next = context.nextFocusedView as? VideosCollectionViewCell {
-            UIView.animateWithDuration(0.2, animations: {
+            UIView.animate(withDuration: 0.2, animations: {
                 () -> Void in
                 next.videoImageView.frame.size = focusSize
-                next.videoDescriptionLabel.textColor = UIColor.purpleColor()
+                next.videoDescriptionLabel.textColor = UIColor.purple
             })
         }
     }

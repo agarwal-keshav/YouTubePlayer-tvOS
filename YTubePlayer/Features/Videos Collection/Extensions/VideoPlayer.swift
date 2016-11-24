@@ -19,7 +19,7 @@ class VideoPlayer: AVPlayerViewController, AVPlayerViewControllerDelegate {
     func playVideo() {
         let videoURL = self.video?.videoFormattedURL()
         if (videoURL != nil) {
-            player = AVPlayer(URL: videoURL!)
+            player = AVPlayer(url: videoURL! as URL)
             player?.play()
         }
         

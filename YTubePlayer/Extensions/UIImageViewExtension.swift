@@ -10,13 +10,13 @@ import UIKit
 
 extension UIImageView {
 
-    public func imageFromUrl(URL: NSURL) {
-        let request = NSURLRequest(URL: URL, cachePolicy: .UseProtocolCachePolicy, timeoutInterval: 60)
-        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: configuration)
-        let imageData = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+    public func imageFromUrl(_ URL: Foundation.URL) {
+        let request = URLRequest(url: URL, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 60)
+        let configuration = URLSessionConfiguration.default
+        let session = URLSession(configuration: configuration)
+        let imageData = session.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
             if let imageData = data {
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                DispatchQueue.main.async(execute: { () -> Void in
                     self.image = UIImage(data: imageData)
                 })
             }

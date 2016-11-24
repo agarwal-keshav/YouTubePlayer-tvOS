@@ -23,8 +23,8 @@
 		AD1C95311C42172C009B9829 /* YoutubeParser in Sources */ = {isa = PBXBuildFile; fileRef = AD1C95221C42170C009B9829 /* YoutubeParser */; };
 		AD1C95361C4217B0009B9829 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = AD1C95351C4217B0009B9829 /* Classes */; };
 		AD1C95391C4217BA009B9829 /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1C95381C4217BA009B9829 /* HCYoutubeParser.m */; };
-		AD1CDD541C52EDF3002B8471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1CDD4F1C52EDE9002B8471 /* Alamofire.framework */; };
-		AD1CDD551C52EDF3002B8471 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD1CDD4F1C52EDE9002B8471 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ADA3D9091DE795F400F6F869 /* Pods_YTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA3D9081DE795F400F6F869 /* Pods_YTubePlayer.framework */; };
+		ADA3D90A1DE795F400F6F869 /* Pods_YTubePlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADA3D9081DE795F400F6F869 /* Pods_YTubePlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADD90E0F1C521DF500DCD2D6 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD90E0E1C521DF500DCD2D6 /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,23 +92,16 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
-		AD1CDD561C52EDF3002B8471 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD1CDD3C1C52EDE9002B8471 /* Alamofire.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CF626EE1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ADD90E2C1C52251F00DCD2D6 /* Embed Frameworks */ = {
+		ADA3D90B1DE795F400F6F869 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD1CDD551C52EDF3002B8471 /* Alamofire.framework in Embed Frameworks */,
+				ADA3D90A1DE795F400F6F869 /* Pods_YTubePlayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +109,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		45D248B10A8E3DD88E9CDC54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		45959621A7924B2DD58C51CB /* Pods-YTubePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTubePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTubePlayer/Pods-YTubePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		8E27E4501BAA258F008C2C17 /* YouTubeSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeSearchResult.swift; sourceTree = "<group>"; };
 		8E27E4531BAA2BDF008C2C17 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		8E5045261BA7B2EC009D467B /* YTubePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTubePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +122,7 @@
 		8E5045431BA7BA02009D467B /* VideosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewCell.swift; sourceTree = "<group>"; };
 		8E5045461BA7BAC5009D467B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		8E5045601BA9055F009D467B /* YTubePlayer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YTubePlayer-Bridging-Header.h"; sourceTree = "<group>"; };
-		A27256CF754205B696BD7C9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9EC02361B4AAE88164412E94 /* Pods-YTubePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTubePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YTubePlayer/Pods-YTubePlayer.release.xcconfig"; sourceTree = "<group>"; };
 		AD1C95201C42170C009B9829 /* HCYoutubeParser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HCYoutubeParser.podspec; sourceTree = "<group>"; };
 		AD1C95211C42170C009B9829 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD1C95221C42170C009B9829 /* YoutubeParser */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YoutubeParser; sourceTree = "<group>"; };
@@ -139,7 +132,11 @@
 		AD1C95371C4217BA009B9829 /* HCYoutubeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCYoutubeParser.h; path = YoutubeParser/Classes/HCYoutubeParser.h; sourceTree = "<group>"; };
 		AD1C95381C4217BA009B9829 /* HCYoutubeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCYoutubeParser.m; path = YoutubeParser/Classes/HCYoutubeParser.m; sourceTree = "<group>"; };
 		AD1CDD3C1C52EDE9002B8471 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "YTubePlayer/External Libraries/Alamofire/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		AD8F58821DE792B300536E2B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA3D9051DE795E600F6F869 /* Pods_YTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_YTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA3D9081DE795F400F6F869 /* Pods_YTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_YTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD90E0E1C521DF500DCD2D6 /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		DB5797505163D59A0F81E1EB /* Pods_YTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,18 +144,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1CDD541C52EDF3002B8471 /* Alamofire.framework in Frameworks */,
+				ADA3D9091DE795F400F6F869 /* Pods_YTubePlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A73323ADD473FDDF7D7C0FB /* Pods */ = {
+		10C55AEAF59CCD9C12E6F824 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A27256CF754205B696BD7C9E /* Pods.debug.xcconfig */,
-				45D248B10A8E3DD88E9CDC54 /* Pods.release.xcconfig */,
+				45959621A7924B2DD58C51CB /* Pods-YTubePlayer.debug.xcconfig */,
+				9EC02361B4AAE88164412E94 /* Pods-YTubePlayer.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -174,10 +171,14 @@
 		8E50451D1BA7B2EC009D467B = {
 			isa = PBXGroup;
 			children = (
+				ADA3D9081DE795F400F6F869 /* Pods_YTubePlayer.framework */,
+				ADA3D9051DE795E600F6F869 /* Pods_YTubePlayer.framework */,
+				AD8F58821DE792B300536E2B /* Alamofire.framework */,
 				AD1CDD3C1C52EDE9002B8471 /* Alamofire.xcodeproj */,
 				8E5045281BA7B2EC009D467B /* YTubePlayer */,
 				8E5045271BA7B2EC009D467B /* Products */,
-				0A73323ADD473FDDF7D7C0FB /* Pods */,
+				10C55AEAF59CCD9C12E6F824 /* Pods */,
+				8F8F97CE75041A6F810DE482 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +265,14 @@
 			path = "External Libraries";
 			sourceTree = "<group>";
 		};
+		8F8F97CE75041A6F810DE482 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB5797505163D59A0F81E1EB /* Pods_YTubePlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD1C95251C42170C009B9829 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,17 +303,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E5045351BA7B2EC009D467B /* Build configuration list for PBXNativeTarget "YTubePlayer" */;
 			buildPhases = (
+				066EA5CBD94DEBB85C97D70E /* [CP] Check Pods Manifest.lock */,
 				8E5045221BA7B2EC009D467B /* Sources */,
 				8E5045231BA7B2EC009D467B /* Frameworks */,
 				8E5045241BA7B2EC009D467B /* Resources */,
-				D115A1D31A5626230A346749 /* Embed Pods Frameworks */,
-				05DBCC0D910F2C7405F08398 /* Copy Pods Resources */,
-				ADD90E2C1C52251F00DCD2D6 /* Embed Frameworks */,
+				43FDAB49373A077A0A049B2C /* [CP] Embed Pods Frameworks */,
+				2BB83734F515E7BCD35AC4CC /* [CP] Copy Pods Resources */,
+				ADA3D90B1DE795F400F6F869 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AD1CDD571C52EDF3002B8471 /* PBXTargetDependency */,
 			);
 			name = YTubePlayer;
 			productName = StarcraftWatch;
@@ -318,12 +327,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Prolific Interactive";
 				TargetAttributes = {
 					8E5045251BA7B2EC009D467B = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = GEBS8SWHRR;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -438,34 +448,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05DBCC0D910F2C7405F08398 /* Copy Pods Resources */ = {
+		066EA5CBD94DEBB85C97D70E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D115A1D31A5626230A346749 /* Embed Pods Frameworks */ = {
+		2BB83734F515E7BCD35AC4CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTubePlayer/Pods-YTubePlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43FDAB49373A077A0A049B2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTubePlayer/Pods-YTubePlayer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -490,14 +515,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD1CDD571C52EDF3002B8471 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Alamofire tvOS";
-			targetProxy = AD1CDD561C52EDF3002B8471 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8E50452D1BA7B2EC009D467B /* Main.storyboard */ = {
@@ -524,8 +541,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -568,8 +587,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -586,6 +607,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -594,42 +616,44 @@
 		};
 		8E5045361BA7B2EC009D467B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A27256CF754205B696BD7C9E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 45959621A7924B2DD58C51CB /* Pods-YTubePlayer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = GEBS8SWHRR;
 				INFOPLIST_FILE = "$(SRCROOT)/YTubePlayer/External Libraries/youtubeparser-tvos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazim.yplayer;
 				PRODUCT_NAME = YTubePlayer;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./YTubePlayer/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/$(PROJECT_NAME)";
 			};
 			name = Debug;
 		};
 		8E5045371BA7B2EC009D467B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45D248B10A8E3DD88E9CDC54 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 9EC02361B4AAE88164412E94 /* Pods-YTubePlayer.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = GEBS8SWHRR;
 				INFOPLIST_FILE = "$(SRCROOT)/YTubePlayer/External Libraries/youtubeparser-tvos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazim.yplayer;
 				PRODUCT_NAME = YTubePlayer;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./YTubePlayer/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/$(PROJECT_NAME)";
 			};
 			name = Release;

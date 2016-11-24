@@ -20,7 +20,7 @@ class VideosCollectionViewCell: UICollectionViewCell {
         self.videoImageView.adjustsImageWhenAncestorFocused = true
     }
 
-    func setup(video: Video) {
+    func setup(_ video: Video) {
         self.videoImageView.imageFromUrl(video.thumbnailURL)
         self.videoDescriptionLabel.text = video.name
     }

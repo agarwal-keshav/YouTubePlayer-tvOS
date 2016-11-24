@@ -12,13 +12,13 @@ import UIKit
 struct Video {
 
     let id: String
-    var URL: NSURL?
+    var URL: Foundation.URL?
     let name: String
-    let thumbnailURL: NSURL
-    let largeThumbnailURL: NSURL
+    let thumbnailURL: Foundation.URL
+    let largeThumbnailURL: Foundation.URL
     let description: String
 
-    init(id: String, name: String, description: String, thumbnail: NSURL, largeThumbnailURL: NSURL) {
+    init(id: String, name: String, description: String, thumbnail: Foundation.URL, largeThumbnailURL: Foundation.URL) {
         self.id = id
         self.name = name
         self.description = description
@@ -30,15 +30,15 @@ struct Video {
         return self.name + "\n" + self.description
     }
 
-    mutating func videoFormattedURL() -> NSURL? {
+    mutating func videoFormattedURL() -> Foundation.URL? {
         if self.URL == nil {
             let urlStr = "https://www.youtube.com/watch?v=\(self.id)"
             //let urlStr = "https://www.youtube.com/watch?v=pwb-yDYVRcE"
-            self.URL = (NSURL(string: urlStr))
+            self.URL = (Foundation.URL(string: urlStr))
         }
-        let videosDict = HCYoutubeParser.h264videosWithYoutubeURL(self.URL)
-        if let videoURL = videosDict["medium"] as? String {
-            return NSURL(string: videoURL)!
+        let videosDict = HCYoutubeParser.h264videos(withYoutubeURL: self.URL)
+        if let videoURL = videosDict?["medium"] as? String {
+            return Foundation.URL(string: videoURL)!
         }
 
         return nil

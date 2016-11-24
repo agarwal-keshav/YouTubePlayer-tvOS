@@ -34,8 +34,8 @@ struct YouTubeSearchResult {
             id: videoId,
             name: title,
             description: description,
-            thumbnail: NSURL(string: thumbnailStr)!,
-            largeThumbnailURL: NSURL(string: largeThumbnailStr)!
+            thumbnail: URL(string: thumbnailStr)!,
+            largeThumbnailURL: URL(string: largeThumbnailStr)!
         )
     }
 }
