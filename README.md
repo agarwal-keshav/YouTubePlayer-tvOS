@@ -5,7 +5,7 @@ The following is a fork from [@klein-thibault](https://github.com/klein-thibault
 Things I modified and added: 
   - Layout tweaks 
   - Connects to [YouTubePlayer-tvOS-backend](https://github.com/NazimAmin/YouTubePlayer-tvOS-backend) to load data using Google OAuth
-  - Removed DetailedViewController for faster playback
+  - Removed DetailedViewController for faster playback.
 
 ### Why? 
 
