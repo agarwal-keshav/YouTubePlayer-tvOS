@@ -7,7 +7,7 @@ Things I modified and added:
   - Connects to [YouTubePlayer-tvOS-backend](https://github.com/NazimAmin/YouTubePlayer-tvOS-backend) to load data using Google OAuth
   - Removed DetailedViewController for faster playback.
 
-I recently bought an AppleTV for my mom. The current YouTube app is a struggle for her to navigate through. So I created this for her making it easier to navigate and watch the only type of videos she likes. 
+I recently bought an AppleTV for my mom. The current YouTube app is a struggle for her to navigate through. So I created this for her making it easier to navigate and watch the only type of videos she likes  . 
 
 
 
